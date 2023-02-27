@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block results %}
+<p>Take a guess!</p>
+<form action="/guess" method="post">
+    <input name="input" type="input" placeholder="Enter a number">
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
